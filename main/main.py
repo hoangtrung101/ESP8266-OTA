@@ -10,6 +10,7 @@ def start():
     # from main.x import YourProject
     # project = YourProject()
     # ...
+    print("hello")
 
 def boot():
     download_and_install_update_if_available()
