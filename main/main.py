@@ -1,4 +1,6 @@
 from ota_update.main.ota_updater import OTAUpdater
+import machine
+import time
 
 
 def download_and_install_update_if_available():
@@ -10,7 +12,12 @@ def start():
     # from main.x import YourProject
     # project = YourProject()
     # ...
-    print("hello")
+    pin=machine.Pin(2, machine.Pin.OUT)
+    while(1):
+        pin.value(1)
+        time.sleep(1)
+        pin.value(0)
+        time.sleep(1)
 
 def boot():
     download_and_install_update_if_available()
