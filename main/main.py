@@ -11,6 +11,7 @@ def start():
     # project = YourProject()
     # ...
     print("hello")
+    print("hoang trung")
 
 def boot():
     download_and_install_update_if_available()
